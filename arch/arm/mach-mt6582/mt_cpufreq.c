@@ -97,15 +97,15 @@ static struct early_suspend mt_cpufreq_early_suspend_handler =
 #define DVFS_F0_3   (1495000)   // KHz
 #define DVFS_F0_4   (1391000)   // KHz
 #define DVFS_F0     (1300000)   // KHz
-#define DVFS_F1     (1196000)   // KHz
+#define DVFS_F1     (1144000)   // KHz
 #define DVFS_F1_1   (1092000)   // KHz
-#define DVFS_F2     (1040000)   // KHz
-#define DVFS_F2_1   (1001000)   // KHz
-#define DVFS_F3     ( 747500)   // KHz
-#define DVFS_F4     ( 598000)   // KHz
+#define DVFS_F2     (975000)   // KHz
+#define DVFS_F2_1   (747500)   // KHz
+#define DVFS_F3     (650000)   // KHz
+#define DVFS_F4     (325000)   // KHz
 
 #if defined(HQA_LV_1_09V)
-    #define DVFS_V0     (1200)  // mV
+    #define DVFS_V0     (1210)  // mV
     #define DVFS_V1     (1150)  // mV
     #define DVFS_V2     (1090)  // mV
     #define DVFS_V3     (1090)  // mV
@@ -120,7 +120,7 @@ static struct early_suspend mt_cpufreq_early_suspend_handler =
     #define DVFS_V2     (1150)  // mV /*Not used */
     #define DVFS_V3     (1050)  // mV /*Not used */
 #else /* Normal case */
-    #define DVFS_V0     (1250)  // mV
+    #define DVFS_V0     (1260)  // mV
     #define DVFS_V1     (1200)  // mV
     #define DVFS_V2     (1150)  // mV
     #ifdef MT_DVFS_LOW_VOLTAGE_SUPPORT
