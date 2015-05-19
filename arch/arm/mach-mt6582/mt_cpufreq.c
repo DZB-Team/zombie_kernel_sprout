@@ -105,12 +105,12 @@ static struct early_suspend mt_cpufreq_early_suspend_handler =
 #define DVFS_F4     (325000)   // KHz
 
 #if defined(HQA_LV_1_09V)
-    #define DVFS_V0     (1210)  // mV
+    #define DVFS_V0     (1200)  // mV
     #define DVFS_V1     (1150)  // mV
     #define DVFS_V2     (1090)  // mV
     #define DVFS_V3     (1090)  // mV
 #elif defined(HQA_NV_1_15V)
-    #define DVFS_V0     (1260)  // mV
+    #define DVFS_V0     (1250)  // mV
     #define DVFS_V1     (1200)  // mV
     #define DVFS_V2     (1150)  // mV
     #define DVFS_V3     (1050)  // mV /*Not used */
@@ -120,7 +120,7 @@ static struct early_suspend mt_cpufreq_early_suspend_handler =
     #define DVFS_V2     (1150)  // mV /*Not used */
     #define DVFS_V3     (1050)  // mV /*Not used */
 #else /* Normal case */
-    #define DVFS_V0     (1260)  // mV
+    #define DVFS_V0     (1250)  // mV
     #define DVFS_V1     (1200)  // mV
     #define DVFS_V2     (1150)  // mV
     #ifdef MT_DVFS_LOW_VOLTAGE_SUPPORT
@@ -141,7 +141,7 @@ static struct early_suspend mt_cpufreq_early_suspend_handler =
 /***********************************************
 * RMAP DOWN TIMES to postpone frequency degrade
 ************************************************/
-#define RAMP_DOWN_TIMES (0)
+#define RAMP_DOWN_TIMES (2)
 
 /**********************************
 * Available Clock Source for CPU
