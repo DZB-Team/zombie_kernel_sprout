@@ -611,11 +611,11 @@ static void hp_check_cpu(int cpu, unsigned int load)
 		dbs_freq_increase(policy, policy->max);
 	} else {
 		if (load > 70)
-			freq_next = 1196000;
+			freq_next = 1144000;
 		else if (load > 50)
-			freq_next = 1040000;
+			freq_next = 975000;
 		else if (load > 30)
-			freq_next = 747500;
+			freq_next = 650000;
 		else
 			freq_next = policy->min;
 
