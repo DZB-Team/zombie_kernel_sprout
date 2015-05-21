@@ -347,8 +347,8 @@ CHECKFLAGS     := -D__linux__ -Dlinux -D__STDC__ -Dunix -D__unix__ \
 CFLAGS_MODULE   =
 AFLAGS_MODULE   =
 LDFLAGS_MODULE  =
-CFLAGS_KERNEL	= -mcpu=cortex-a7 -mfpu=neon-vfpv4 -ftree-vectorize
-AFLAGS_KERNEL	= -mcpu=cortex-a7 -mfpu=neon-vfpv4 -ftree-vectorize
+CFLAGS_KERNEL	= 
+AFLAGS_KERNEL	= 
 CFLAGS_GCOV	= -fprofile-arcs -ftest-coverage
 
 
