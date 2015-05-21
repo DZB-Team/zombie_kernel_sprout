@@ -1507,7 +1507,7 @@ SYSCALL_DEFINE4(socketpair, int, family, int, type, int, protocol,
             if(sock1 && SOCK_INODE(sock1) && sock2&& SOCK_INODE(sock2) )
             {
        	        #ifdef CONFIG_MTK_NET_LOGGING 
-	            printk(KERN_INFO "[mtk_net][socket]socketpair:fd1[%lu]=%d, fd2[%lu]=%d \n", SOCK_INODE(sock1)->i_ino,fd1,SOCK_INODE(sock2)->i_ino,fd2);
+	            pr_debug("[mtk_net][socket]socketpair:fd1[%lu]=%d, fd2[%lu]=%d \n", SOCK_INODE(sock1)->i_ino,fd1,SOCK_INODE(sock2)->i_ino,fd2);
 	            #endif             
 	     }
 	  
